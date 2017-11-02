@@ -1,0 +1,17 @@
+<html>  
+<script src="js/angular/angular.min.js"></script>   
+<body ng-app="myApp" ng-controller="myCntroller">
+
+    <h2>Hellow {{firstName}} {{lastName}}</h2>
+
+    <script>
+        var app=angular.module("myApp",[]);
+        app.controller('myCntroller',function($scope){
+            $scope.firstName="Rezaul";
+            $scope.lastName="Islam";
+        })
+    </script>
+
+
+</body>  
+</html>  

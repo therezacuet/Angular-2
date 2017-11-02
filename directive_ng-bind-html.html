@@ -1,0 +1,19 @@
+<html>  
+<script src="js/angular/angular.min.js"></script>  
+<script src="js/angular/angular-sanitize.js"></script>  
+<body>  
+<div ng-app="myApp" ng-controller="myCtrl">
+	<p ng-bind-html="myText"></p>  
+
+</div>  
+<script type="text/javascript">
+	var app=angular.module("myApp",['ngSanitize']);
+	app.controller("myCtrl",function($scope){
+		$scope.myText="Thanks to: <h1>theReza</h1>";
+	});
+</script>
+<p><b>Note:</b> This example has "angular-sanitize.js",  
+which has functions for removing potentially dangerous tokens from the HTML.</p>  
+</body>  
+  
+</html>  

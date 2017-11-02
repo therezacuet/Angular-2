@@ -1,0 +1,20 @@
+<html>  
+<script src="js/angular/angular.min.js"></script>   
+<body ng-app="myApp" ng-controller="myCtrl">  
+<form ng-submit="myFunc()">  
+  <input type="text">  
+  <input type="submit">  
+</form>  
+<p>{{myTxt}}</p>  
+<p>In this example you can see, how an AngularJS function is executed when a form is submitted.</p>  
+<script>  
+var app = angular.module("myApp", []);  
+app.controller("myCtrl", function($scope) {  
+  $scope.myTxt = "Nothing is submitted.";  
+  $scope.myFunc = function () {  
+      $scope.myTxt = "Submit button clicked successfully.";  
+  }  
+});  
+</script>  
+</body>  
+</html>  

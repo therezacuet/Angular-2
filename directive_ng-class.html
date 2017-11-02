@@ -1,0 +1,35 @@
+<html>  
+<script src="js/angular/angular.min.js"></script>  
+<style>  
+.normal {  
+    color:white;  
+    background-color:grey;  
+    padding:20px;  
+    font-family:"Courier New";  
+}  
+.medium {  
+    color:white;  
+    background-color:brown;  
+    padding:30px;  
+    font-family:"Courier New";  
+}  
+.advance {  
+    background-color:red;  
+    padding:40px;  
+    font-family:Verdana;  
+}  
+</style>  
+<body ng-app="">  
+<p>Choose a class:</p>  
+<select ng-model="home">  
+<option value="normal">Normal</option>  
+<option value="medium">Medium</option>  
+<option value="advance">Advance</option>  
+</select>  
+<div ng-class="home">  
+  <h1>I am theReza!</h1>  
+  <p>How are you today??!</p>  
+</div>  
+
+</body>  
+</html>  

@@ -1,0 +1,20 @@
+<html>  
+<script src="js/angular/angular.min.js"></script>  
+<body ng-app="myApp">  
+<div ng-controller="myCtrl">  
+  <p>Type something in the input field:</p>  
+  <input type="text" ng-change="myFunc()" ng-init="myValue='0'" ng-model="myValue" />  
+
+  <input type="text" ng-change="myFunc()" ng-init="myValue1='10'" ng-model="myValue1" />  
+
+  <p>The input field has changed {{myValue * myValue1}} times.</p>  
+</div>  
+<script>  
+  angular.module('myApp', [])  
+    .controller('myCtrl', ['$scope', function($scope) {  
+      
+    }]);  
+</script>  
+</body>  
+  
+</html>  

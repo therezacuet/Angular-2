@@ -1,0 +1,25 @@
+<html>  
+<script src="js/angular/angular.min.js"></script>  
+<body>  
+<div ng-app="ngBind">  
+
+<script type="text/javascript">
+	angular.module('ngBind',[])
+	.controller('ExampleController',['$scope',function($scope){
+		$scope.name="theReza";
+	}]);
+
+</script>
+
+<div ng-controller="ExampleController">
+	Enter Name: <input type="text" ng-model="name"><br>
+	Hellow <span ng-bind="name"></span>!<br><br>
+
+	How are you {{name}}?
+	
+</div>
+ 
+</div>  
+</body>  
+  
+</html>  

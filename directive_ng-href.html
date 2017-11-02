@@ -1,0 +1,16 @@
+<html>  
+<script src="js/angular/angular.min.js"></script>   
+<body ng-app="myApp" ng-controller="myCtrl">
+    
+    <a ng-href="{{link}}" target="blank">Click Me</a>
+
+
+    <script>
+        angular.module('myApp',[])
+        .controller('myCtrl',function($scope){
+            $scope.link="http://www.facebook.com";
+        });
+    </script>
+    
+</body>  
+</html>  

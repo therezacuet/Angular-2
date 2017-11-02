@@ -1,0 +1,21 @@
+<html>  
+<script src="js/angular/angular.min.js"></script>   
+<style>
+
+    .test{
+        background-color:red;  
+        padding:40px;  
+        font-family:Verdana;  
+    }
+
+</style>
+<body ng-app="">
+    <h3>ng-cut Example</h3>
+
+    <input ng-cut="count = count + 1" ng-init="count=0" value="Cut this text">
+
+    <p>The text has been cut<strong> {{count}} </strong>times.</p>  
+
+
+</body>  
+</html>  

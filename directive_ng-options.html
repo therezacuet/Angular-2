@@ -1,0 +1,17 @@
+<html>  
+<script src="js/angular/angular.min.js"></script>   
+<body ng-app="myApp" ng-controller="myCtrl">
+    <select ng-model="selectedName" ng-options="item for item in name">
+    </select>
+
+    <script>
+        var app=angular.module('myApp',[]);
+        app.controller('myCtrl',function($scope){
+            $scope.name=["Java","Python","C++","Ruby","PHP","Android"];
+        });
+    </script>  
+
+    <p>This example shows how to fill a dropdown list using the ng-options directive.</p>  
+
+</body>  
+</html>  

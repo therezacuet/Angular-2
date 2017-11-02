@@ -1,0 +1,54 @@
+<html>  
+<script src="js/angular/angular.min.js"></script>  
+<style>  
+.normal {  
+    color:white;  
+    background-color:grey;  
+    padding:20px;  
+    font-family:"Courier New";  
+}  
+</style>  
+<body ng-app="myApp">
+    <table ng-controller="myCrtl">
+        <tr ng-repeat="x in record" ng-class-even="'normal'">
+            <td>{{x.name}}</td>
+            <td>{{x.country}}</td>
+        </tr>
+    </table>  
+
+    <script>
+        var app=angular.module("myApp",[]);
+        app.controller("myCrtl",function($scope){
+            $scope.record=[
+                {
+                    "name":"Rezaul Islam",
+                    "country":"Bangladesh"
+                },
+                {
+                    "name":"Risalat Al Naniyan",
+                    "country":"Bangladesh"
+                }
+                ,
+                {
+                    "name":"Raif Al hasan Aayan",
+                    "country":"Bangladesh"
+                },  
+                {  
+                    "name" : "Suresh Prabhu",  
+                    "country" : "India"  
+                },  
+                {  
+                    "name" : "Donald Trump",  
+                    "country" : "USA"  
+                },  
+                {  
+                    "name" : "Nawaz Sharif",  
+                    "country" : "Pakistan"  
+                }  
+            ]
+        })
+
+    </script>
+
+</body>  
+</html>  

@@ -1,0 +1,21 @@
+<html>  
+<script src="js/angular/angular.min.js"></script>   
+<style>
+
+    .test{
+        background-color:red;  
+        padding:40px;  
+        font-family:Verdana;  
+    }
+
+</style>
+<body ng-app="">
+    <h3>ng-copy Example</h3>
+
+    <p ng-copy="copy=true" ng-init="copy=false" ng-model="value">Hellow Rezaul</p>
+
+    <span ng-class="test">Action:{{copy}}</span>
+
+
+</body>  
+</html>  

@@ -1,0 +1,12 @@
+<html>  
+<script src="js/angular/angular.min.js"></script>   
+<body ng-app="">  
+<div ng-init="myVar = 'tajmahal.jpg'">  
+<h1>Tajmahal</h1>  
+<img ng-src="{{myVar}}">  
+</div>  
+<p>This example could use the original src attribute, but if you use AngularJS code inside the value, it is better to use the ng-src attribute instead.</p> 
+
+<img ng-src="{{myVar}}" alt="Description"/>   
+</body>  
+</html>  
